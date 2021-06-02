@@ -12,7 +12,7 @@ python 3.7.6
 
 tensorflow 2.2.0
 
-## Examples:
+## Examples
 
 python train.py --model dlsm --dataset email --epochs 2000 --encoder 32_64_128 --decoder 50_100 --latent_dim 50 --directed 1 --features 0 --learning_rate 0.01
 

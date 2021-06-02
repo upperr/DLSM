@@ -1,6 +1,6 @@
 # A Deep Latent Space Model for Graph Representation Learning
 
-This is the code of our work "A Deep Latent Space Model for Graph Representation Learning"
+This is the source code of our work "A Deep Latent Space Model for Graph Representation Learning"
 
 ## Abstract
 

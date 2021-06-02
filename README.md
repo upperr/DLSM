@@ -9,6 +9,7 @@ Graph representation learning is a fundamental problem for modeling relational d
 ## Requirements
 
 python 3.7.6
+
 tensorflow 2.2.0
 
 ## Examples:

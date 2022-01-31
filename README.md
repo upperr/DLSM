@@ -15,17 +15,22 @@ tensorflow 2.2.0
 ## Examples
 
 ### Link prediction
+
 ```
 python train.py --model dlsm --dataset political --use_kl_warmup 1
 ```
 ```
 python train.py --model dlsm_d --dataset wiki --use_kl_warmup 0
 ```
+
 ### Community detection
+
 ```
 python train.py --model dlsm --dataset political --link_prediction 0 --community_detection 1 --use_kl_warmup 1
 ```
+
 ### Graph generation
+
 ```
 python train.py --model dlsm --dataset email --link_prediction 0 --graph_generation 1 --use_kl_warmup 1
 ```

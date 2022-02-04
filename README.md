@@ -1,6 +1,6 @@
 # Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning
 
-This is the source code of our work "Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning".
+This is the source code of our work "Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning" for medium-scale graph datasets. [Here](https://github.com/upperr/DLSM-OGB) is another implementation of our work for the large-scale OGB datasets, where employs GraphSAGE as the encoder within our framework.
 
 ## Abstract
 
@@ -8,13 +8,13 @@ Graph representation learning is a fundamental research problem for modeling rel
 
 ## Requirements
 
-python 3.7.6
+- python 3.7.6
 
-tensorflow 2.2.0
+- tensorflow 2.2.0
 
 ## Examples
 
-### Link prediction
+### Link Prediction
 
 ```
 python train.py --model dlsm --dataset political --use_kl_warmup 1
@@ -23,13 +23,13 @@ python train.py --model dlsm --dataset political --use_kl_warmup 1
 python train.py --model dlsm_d --dataset wiki --use_kl_warmup 0
 ```
 
-### Community detection
+### Community Detection
 
 ```
 python train.py --model dlsm --dataset political --link_prediction 0 --community_detection 1 --use_kl_warmup 1
 ```
 
-### Graph generation
+### Graph Generation
 
 ```
 python train.py --model dlsm --dataset email --link_prediction 0 --graph_generation 1 --use_kl_warmup 1

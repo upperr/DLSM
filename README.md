@@ -1,6 +1,6 @@
 # Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning
 
-This is the source code of our work "Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning" for medium-scale graph datasets. [Here](https://github.com/upperr/DLSM-OGB) is another implementation of our work for the large-scale OGB datasets, where employs GraphSAGE as the encoder within our framework.
+This is the source code of our work "Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning" for medium-scale graph datasets. [Here](https://github.com/upperr/DLSM-OGB) is another implementation of our work for the large-scale OGB datasets, which employs GraphSAGE as the encoder within our framework.
 
 ## Abstract
 

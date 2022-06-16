@@ -1,10 +1,10 @@
-# Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning
+# A Deep Latent Space Model for Interpretable Representation Learning on Directed Graphs
 
-This is the source code of our work "Combing Latent Space Models and Graph Neural Networks for Directed Graph Representation Learning" for medium-scale graph datasets. [Here](https://github.com/upperr/DLSM-OGB) is another implementation of our work for the large-scale OGB datasets, which employs GraphSAGE as the encoder within our framework.
+This is the source code of our work "A Deep Latent Space Model for Interpretable Representation Learning on Directed Graphs" for medium-scale graph datasets. [Here](https://github.com/upperr/DLSM-OGB) is another implementation of our work for the large-scale OGB datasets, which employs GraphSAGE as the encoder within our framework.
 
 ## Abstract
 
-Graph representation learning is a fundamental research problem for modeling relational data and benefits a number of downstream applications. Traditional Bayesian-based random graph models, such as the latent space models (LSMs), have been proved effective to learn interpretable representations, but suffer from the scalability issue. With the powerful representation learning ability of deep learning-based methods, the deep generative methods for graph-structured data, such as the variational auto-encoders (VAEs), have also emerged. However, most existing deep generative methods only consider undirected graphs, and usually bring about the interpretability issue. To overcome the problems in existing research and take the advantages of both random graph models and graph neural networks (GNNs), in this paper, we propose a deep generative model DLSM (Deep Latent Space Model) for directed graph representation learning by combining the LSMs and GNNs via a hierarchical VAE architecture. To adapt to directed graphs, our model generates multiple highly interpretable latent variables as node representations, which is also scalable for large-scale graphs. The experimental results on the real-world datasets demonstrate that our model achieves superior performances on multiple downstream tasks with good interpretability and scalability.
+Graph representation learning is a fundamental research problem for modeling relational data and benefits a number of downstream applications. Traditional Bayesian-based random graph models, such as the stochastic blockmodels (SBMs) and latent space models (LSMs), have proved effective to learn interpretable representations. To take the advantages of both the random graph models and deep learning-based methods such as graph neural networks (GNNs), some research proposes deep generative methods by combining the SBMs and GNNs. However, these combined methods have not fully considered the statistical properties of graphs which limits the model interpretability and applicability on directed graphs. To address these limitations in existing research, in this paper, we propose a Deep Latent Space Model (DLSM) for interpretable representation learning on directed graphs, by combining the LSMs and GNNs via a novel ``lattice VAE'' architecture. The proposed model generates multiple latent variables as node representations to improve model interpretability and adapt to the structure of directed graphs. Extensive experiments on representative real-world datasets demonstrate that our model achieves the state-of-the-art performances on link prediction and community detection with good interpretability.
 
 ## Requirements
 
@@ -27,10 +27,4 @@ python train.py --model dlsm_d --dataset wiki --use_kl_warmup 0
 
 ```
 python train.py --model dlsm --dataset political --link_prediction 0 --community_detection 1 --use_kl_warmup 1
-```
-
-### Graph Generation
-
-```
-python train.py --model dlsm --dataset email --link_prediction 0 --graph_generation 1 --use_kl_warmup 1
 ```
